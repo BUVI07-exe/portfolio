@@ -380,6 +380,30 @@ footer {
   color: #a6ff00;
 }
 @media (max-width: 900px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .contact-button {
+    margin-top: 0;
+  }
   .hero {
     flex-direction: column;
     padding: 40px 20px 0 20px;
@@ -390,6 +414,8 @@ footer {
   }
   .hero-image {
     margin-top: 40px;
+    width: 250px;
+    height: 250px;
   }
   .portfolio-grid {
     flex-direction: column;
@@ -399,13 +425,53 @@ footer {
     width: 90%;
   }
   .social-tile-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
   .social-tile {
     width: 38px;
     min-width: 0;
+  }
+}
+
+/* Additional media query for smaller devices */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 15px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .contact-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .hero {
+    padding: 30px 15px 0 15px;
+  }
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text h3 {
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 }
 /* Projects Section - Flip Cards */
