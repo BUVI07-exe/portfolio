@@ -6,7 +6,8 @@
   <title>Bhuwaneshwaran K | Portfolio</title>
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Removed fontawesome kit script to avoid CORS error -->
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,16 +39,16 @@
         
         <!-- Social Tiles Start -->
         <div class="social-tile-container">
-          <a class="social-tile" href="https://linkedin.com/in/bhuwanesheng" target="_blank" title="LinkedIn">
+          <a class="social-tile" href="https://linkedin.com/in/bhuwanesheng" target="_blank" rel="noopener" title="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a class="social-tile" href="mailto:bhuwaneshbuvi@gmail.com" title="Gmail">
             <i class="fas fa-envelope"></i>
           </a>
-          <a class="social-tile" href="https://github.com/BUVI07-exe" target="_blank" title="GitHub">
+          <a class="social-tile" href="https://github.com/BUVI07-exe" target="_blank" rel="noopener" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a class="social-tile" href="https://www.instagram.com/__iambuvi__/" target="_blank" title="Instagram">
+          <a class="social-tile" href="https://www.instagram.com/__iambuvi__/" target="_blank" rel="noopener" title="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -203,7 +204,7 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function(){
-      emailjs.init("uD15Ragx2Lcn8RNkr");\
+      emailjs.init("uD15Ragx2Lcn8RNkr");
     })();
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('contact-form');
