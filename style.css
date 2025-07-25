@@ -23,7 +23,7 @@ header {
 .logo {
   font-size: 28px;
   font-weight: 700;
-  color: #a6ff00;
+  color: #e62429;
 }
 
 /* Navigation Buttons */
@@ -38,16 +38,16 @@ nav ul li a {
 }
 nav ul li a:hover,
 nav ul li a.active {
-  background: #a6ff00;
-  color: #222;
-  border-color: #a6ff00;
+  background: #e62429;
+  color: #fff;
+  border-color: #e62429;
   text-decoration: none;
 }
 
 .contact-button {
   padding: 10px 20px;
-  border: 2px solid #a6ff00;
-  color: #a6ff00;
+  border: 2px solid #e62429;
+  color: #e62429;
   background: transparent;
   border-radius: 25px;
   font-weight: bold;
@@ -56,8 +56,8 @@ nav ul li a.active {
 }
 
 .contact-button:hover {
-  background-color: #a6ff00;
-  color: black;
+  background-color: #e62429;
+  color: white;
 }
 
 /* Section spacing and layout */
@@ -71,7 +71,7 @@ section:not(:last-of-type)::after {
   display: block;
   width: 80%;
   height: 2px;
-  background: linear-gradient(to right, #222, #a6ff00, #222);
+  background: linear-gradient(to right, #222, #e62429, #222);
   margin: 40px auto 0 auto;
   border-radius: 2px;
   opacity: 0.7;
@@ -97,7 +97,7 @@ section:not(:last-of-type)::after {
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  color: #a6ff00;
+  color: #e62429;
 }
 
 .hero-text h3 {
@@ -106,7 +106,7 @@ section:not(:last-of-type)::after {
 }
 
 .hero-text h3 span {
-  color: #00ff88;
+  color: #1e3a8a;
 }
 
 .hero-text p {
@@ -125,7 +125,7 @@ section:not(:last-of-type)::after {
 }
 
 .info-list li a {
-  color: #a6ff00;
+  color: #e62429;
   text-decoration: none;
   word-break: break-all;
 }
@@ -142,9 +142,9 @@ section:not(:last-of-type)::after {
 }
 
 .socials a {
-  color: #a6ff00;
+  color: #e62429;
   font-size: 20px;
-  border: 2px solid #a6ff00;
+  border: 2px solid #e62429;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -155,8 +155,8 @@ section:not(:last-of-type)::after {
 }
 
 .socials a:hover {
-  background-color: #a6ff00;
-  color: black;
+  background-color: #e62429;
+  color: white;
 }
 
 /* Social Icons Custom Style */
@@ -173,17 +173,17 @@ section:not(:last-of-type)::after {
   width: 50px;
   height: 50px;
   margin: 0 5px;
-  border: 2px solid #a6ff00;
+  border: 2px solid #e62429;
   border-radius: 50%;
-  color: #a6ff00;
+  color: #e62429;
   background: transparent;
   font-size: 24px;
   transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
-  box-shadow: 0 0 15px #a6ff00;
-  background-color: #a6ff00;
+  box-shadow: 0 0 15px #e62429;
+  background-color: #e62429;
   color: #000;
 }
 
@@ -202,16 +202,16 @@ section:not(:last-of-type)::after {
   height: 42px;
   background: #222;
   border-radius: 12px;
-  border: 2px solid #a6ff00;
-  color: #a6ff00;
+  border: 2px solid #e62429;
+  color: #e62429;
   font-size: 22px;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .social-tiles a:hover {
-  background: #a6ff00;
+  background: #e62429;
   color: #222;
-  box-shadow: 0 0 10px #a6ff00;
+  box-shadow: 0 0 10px #e62429;
 }
 
 /* Download Button */
@@ -220,20 +220,20 @@ section:not(:last-of-type)::after {
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
-  background-color: #a6ff00;
-  color: black;
+  background-color: #e62429;
+  color: white;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .download-btn:hover {
-  background-color: #8edb00;
+  background-color: #b31a1f;
 }
 
 /* Hero Image */
 .hero-image {
-  border: 3px solid #00ff55;
+  border: 3px solid #1e3a8a;
   border-radius: 50%;
   overflow: hidden;
   width: 300px;
@@ -261,7 +261,7 @@ section:not(:last-of-type)::after {
 
 .card {
   background-color: #222;
-  color: #fff;
+  color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
@@ -271,7 +271,7 @@ section:not(:last-of-type)::after {
 
 .card h3 {
   margin-top: 0;
-  color: #a6ff00;
+  color: #e62429;
 }
 
 /* Lists in sections */
@@ -297,7 +297,7 @@ form textarea {
   max-width: 500px;
   border: none;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: white;
   color: #222;
   font-weight: bold;
 }
@@ -305,8 +305,8 @@ form textarea {
 /* Button Styles */
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #a6ff00;
-  color: #222;
+  background-color: #e62429;
+  color: white;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -314,14 +314,14 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #8edb00;
-  color: #000;
+  background-color: #b31a1f;
+  color: #fff;
 }
 
 /* Footer */
 footer {
   background-color: #000;
-  color: #a6ff00;
+  color: #e62429;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
@@ -345,7 +345,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #00ff55;
+  color: #1e3a8a;
   font-size: 32px;
   z-index: 1000;
   animation: floatIcon 2s infinite;
@@ -368,16 +368,16 @@ footer {
   width: 38px;
   height: 38px;
   justify-content: center;
-  border: 1.5px solid #a6ff00;
+  border: 1.5px solid #e62429;
   transition: background 0.2s, border 0.2s;
 }
 .social-tile:hover {
   background: #23233a;
-  border-color: #00ff88;
+  border-color: #1e3a8a;
 }
 .social-tile i {
   font-size: 20px;
-  color: #a6ff00;
+  color: #e62429;
 }
 @media (max-width: 900px) {
   header {
@@ -527,19 +527,19 @@ footer {
 }
 
 .flip-card-front {
-    background-color: #121a00; /* Dark greenish background to match theme */
-    color: #a6ff00; /* Theme accent color */
-    border: 1px solid #a6ff00;
+    background-color: #1e3a8a; /* Spiderman blue background */
+    color: white; /* White text */
+    border: 1px solid #e62429; /* Spiderman red border */
 }
 
 .flip-card-back {
     background-color: #0f0f1b; /* Match body background */
-    color: #a6ff00;
+    color: white;
     transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #a6ff00;
+    border: 1px solid #e62429; /* Spiderman red border */
     border-radius: 8px;
 }
 
