@@ -1,0 +1,573 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f1b;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e62429;
+}
+
+/* Navigation Buttons */
+nav ul li a {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+  border: 2px solid transparent;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: #e62429;
+  color: #fff;
+  border-color: #e62429;
+  text-decoration: none;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  border: 2px solid #e62429;
+  color: #e62429;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e62429;
+  color: white;
+}
+
+/* Section spacing and layout */
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #222;
+  position: relative;
+}
+section:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #222, #e62429, #222);
+  margin: 40px auto 0 auto;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.section-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px 0 60px;
+}
+
+.hero-text {
+  max-width: 60%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #e62429;
+}
+
+.hero-text h3 {
+  font-size: 28px;
+  color: white;
+}
+
+.hero-text h3 span {
+  color: #1e3a8a;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  color: #ccc;
+  max-width: 600px;
+}
+
+.info-list {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-list li a {
+  color: #e62429;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.info-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Socials */
+.socials {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: #e62429;
+  font-size: 20px;
+  border: 2px solid #e62429;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background-color: #e62429;
+  color: white;
+}
+
+/* Social Icons Custom Style */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: 2px solid #e62429;
+  border-radius: 50%;
+  color: #e62429;
+  background: transparent;
+  font-size: 24px;
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  box-shadow: 0 0 15px #e62429;
+  background-color: #e62429;
+  color: #000;
+}
+
+/* Add to your style.css file */
+.social-tiles {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.social-tiles a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #222;
+  border-radius: 12px;
+  border: 2px solid #e62429;
+  color: #e62429;
+  font-size: 22px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.social-tiles a:hover {
+  background: #e62429;
+  color: #222;
+  box-shadow: 0 0 10px #e62429;
+}
+
+/* Download Button */
+.download-btn {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e62429;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #b31a1f;
+}
+
+/* Hero Image */
+.hero-image {
+  border: 3px solid #1e3a8a;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Portfolio Grid and Cards */
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #e62429;
+}
+
+/* Lists in sections */
+.section ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e62429;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #b31a1f;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #e62429;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Blinking animation for hero */
+.blinking {
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+/* Floating Corner Icon */
+@keyframes floatIcon {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-20px);}
+  100% { transform: translateY(0);}
+}
+.corner-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #1e3a8a;
+  font-size: 32px;
+  z-index: 1000;
+  animation: floatIcon 2s infinite;
+}
+
+.social-tile-container {
+  display: flex;
+  gap: 14px;
+  margin-top: 35px;
+  justify-content: flex-start;
+}
+.social-tile {
+  background: #181828;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  border: 1.5px solid #e62429;
+  transition: background 0.2s, border 0.2s;
+}
+.social-tile:hover {
+  background: #23233a;
+  border-color: #1e3a8a;
+}
+.social-tile i {
+  font-size: 20px;
+  color: #e62429;
+}
+@media (max-width: 900px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .contact-button {
+    margin-top: 0;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px 0 20px;
+  }
+  .hero-text, .section-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+  }
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .social-tile-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .social-tile {
+    width: 38px;
+    min-width: 0;
+  }
+}
+
+/* Additional media query for smaller devices */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 15px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .contact-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .hero {
+    padding: 30px 15px 0 15px;
+  }
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text h3 {
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+/* Projects Section - Flip Cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%; /* Adjust as needed, but this fills the grid column */
+    height: 250px; /* Set a fixed height for consistency */
+    perspective: 1000px; /* This creates the 3D effect */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Controls the flip speed */
+    transform-style: preserve-3d; /* Essential for 3D transforms */
+    border-radius: 8px;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Hide the back of the element when facing away */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: var(--card-bg-color); /* Assuming you have this defined */
+    color: var(--text-color); /* Assuming you have this defined */
+}
+
+.flip-card-front {
+    background-color: #1e3a8a; /* Spiderman blue background */
+    color: white; /* White text */
+    border: 1px solid #e62429; /* Spiderman red border */
+}
+
+.flip-card-back {
+    background-color: #0f0f1b; /* Match body background */
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e62429; /* Spiderman red border */
+    border-radius: 8px;
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills and is cropped to tile size */
+    border-radius: 8px;
+}
+
+/* Optional: Style for the project text within the cards */
+.flip-card-front h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.flip-card-front ul {
+    list-style: disc inside;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 0.9em;
+}
+
+.flip-card-front ul li {
+    margin-bottom: 5px;
+}
